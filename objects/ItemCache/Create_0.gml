@@ -58,7 +58,7 @@ var itemCache = item[? itemType.item];
 	#region weapons
 var weaponCache = item[? itemType.weapon]
 		#region swords
-			#region gladius
+			#region gladius (average)
 weaponCache[? weaponItem.gladius] = ds_map_create();
 var gladiusCache = weaponCache[? weaponItem.gladius];
 gladiusCache[? weaponStats.name] = "Gladius";
@@ -73,9 +73,69 @@ gladiusCache[? weaponStats.specialValue] = 0;
 gladiusCache[? weaponStats.uniqueAttack] = 7;
 gladiusCache[? weaponStats.misc] = noone;
 			#endregion
+			#region glaphyra (mega cool)
+weaponCache[? weaponItem.glaphyra] = ds_map_create();
+var glaphyraCache = weaponCache[? weaponItem.glaphyra];
+glaphyraCache[? weaponStats.name] = "Glaphyra";
+glaphyraCache[? weaponStats.type] = weaponClass.sword;
+glaphyraCache[? weaponStats.damage] = 5;
+glaphyraCache[? weaponStats.strMod] = 0.20;
+glaphyraCache[? weaponStats.dexMod] = 0.9;
+glaphyraCache[? weaponStats.stagger] = 1;
+glaphyraCache[? weaponStats.range] = 1;
+glaphyraCache[? weaponStats.specialType] = -1;
+glaphyraCache[? weaponStats.specialValue] = 0;
+glaphyraCache[? weaponStats.uniqueAttack] = 7;
+glaphyraCache[? weaponStats.misc] = noone;
+			#endregion
+			#region voltaire (mega cool)
+weaponCache[? weaponItem.voltaire] = ds_map_create();
+var voltaireCache = weaponCache[? weaponItem.voltaire];
+voltaireCache[? weaponStats.name] = "Voltaire";
+voltaireCache[? weaponStats.type] = weaponClass.sword;
+voltaireCache[? weaponStats.damage] = 6;
+voltaireCache[? weaponStats.strMod] = 0.15;
+voltaireCache[? weaponStats.dexMod] = 0.1;
+voltaireCache[? weaponStats.stagger] = 1;
+voltaireCache[? weaponStats.range] = 1;
+voltaireCache[? weaponStats.specialType] = -1;
+voltaireCache[? weaponStats.specialValue] = 0;
+voltaireCache[? weaponStats.uniqueAttack] = 7;
+voltaireCache[? weaponStats.misc] = noone;
+			#endregion
+			#region chipped_sword (bellow average)
+weaponCache[? weaponItem.chipped_sword] = ds_map_create();
+var chipped_swordCache = weaponCache[? weaponItem.chipped_sword];
+chipped_swordCache[? weaponStats.name] = "Chipped Sword";
+chipped_swordCache[? weaponStats.type] = weaponClass.sword;
+chipped_swordCache[? weaponStats.damage] = 2;
+chipped_swordCache[? weaponStats.strMod] = 0.05;
+chipped_swordCache[? weaponStats.dexMod] = 0.02;
+chipped_swordCache[? weaponStats.stagger] = 1;
+chipped_swordCache[? weaponStats.range] = 1;
+chipped_swordCache[? weaponStats.specialType] = -1;
+chipped_swordCache[? weaponStats.specialValue] = 0;
+chipped_swordCache[? weaponStats.uniqueAttack] = 7;
+chipped_swordCache[? weaponStats.misc] = noone;
+			#endregion
+			#region wallace_sword (above average)
+weaponCache[? weaponItem.wallace_sword] = ds_map_create();
+var wallace_swordCache = weaponCache[? weaponItem.wallace_sword];
+wallace_swordCache[? weaponStats.name] = "Wallace Sword";
+wallace_swordCache[? weaponStats.type] = weaponClass.sword;
+wallace_swordCache[? weaponStats.damage] = 4;
+wallace_swordCache[? weaponStats.strMod] = 0.11;
+wallace_swordCache[? weaponStats.dexMod] = 0.07;
+wallace_swordCache[? weaponStats.stagger] = 1;
+wallace_swordCache[? weaponStats.range] = 1;
+wallace_swordCache[? weaponStats.specialType] = -1;
+wallace_swordCache[? weaponStats.specialValue] = 0;
+wallace_swordCache[? weaponStats.uniqueAttack] = 7;
+wallace_swordCache[? weaponStats.misc] = noone;
+			#endregion
 		#endregion
 		#region spears
-			#region hastam
+			#region hastam (average)
 weaponCache[? weaponItem.hastam] = ds_map_create();
 var hastamCache = weaponCache[? weaponItem.hastam];
 hastamCache[? weaponStats.name] = "Hastam";
@@ -84,11 +144,71 @@ hastamCache[? weaponStats.damage] = 4;
 hastamCache[? weaponStats.strMod] = 0.05;
 hastamCache[? weaponStats.dexMod] = 0.15;
 hastamCache[? weaponStats.stagger] = 1.1;
-hastamCache[? weaponStats.range] = 1;
+hastamCache[? weaponStats.range] = 1.5;
 hastamCache[? weaponStats.specialType] = -1;
 hastamCache[? weaponStats.specialValue] = 0;
 hastamCache[? weaponStats.uniqueAttack] = 15;
 hastamCache[? weaponStats.misc] = noone;
+			#endregion
+			#region bent_spear (bellow average)
+weaponCache[? weaponItem.bent_spear] = ds_map_create();
+var bent_spearCache = weaponCache[? weaponItem.bent_spear];
+bent_spearCache[? weaponStats.name] = "Bent Spear";
+bent_spearCache[? weaponStats.type] = weaponClass.spear;
+bent_spearCache[? weaponStats.damage] = 2.5;
+bent_spearCache[? weaponStats.strMod] = 0.02;
+bent_spearCache[? weaponStats.dexMod] = 0.10;
+bent_spearCache[? weaponStats.stagger] = 1.1;
+bent_spearCache[? weaponStats.range] = 1.25;
+bent_spearCache[? weaponStats.specialType] = -1;
+bent_spearCache[? weaponStats.specialValue] = 0;
+bent_spearCache[? weaponStats.uniqueAttack] = 15;
+bent_spearCache[? weaponStats.misc] = noone;
+			#endregion
+			#region areadbhar (above average)
+weaponCache[? weaponItem.areadbhar] = ds_map_create();
+var areadbharCache = weaponCache[? weaponItem.areadbhar];
+areadbharCache[? weaponStats.name] = "Areadbhar";
+areadbharCache[? weaponStats.type] = weaponClass.spear;
+areadbharCache[? weaponStats.damage] = 4;
+areadbharCache[? weaponStats.strMod] = 0.07;
+areadbharCache[? weaponStats.dexMod] = 0.18;
+areadbharCache[? weaponStats.stagger] = 1.1;
+areadbharCache[? weaponStats.range] = 1.75;
+areadbharCache[? weaponStats.specialType] = -1;
+areadbharCache[? weaponStats.specialValue] = 0;
+areadbharCache[? weaponStats.uniqueAttack] = 15;
+areadbharCache[? weaponStats.misc] = noone;
+			#endregion
+			#region spear_of_assal (mega cool)
+weaponCache[? weaponItem.spear_of_assal] = ds_map_create();
+var spear_of_assalCache = weaponCache[? weaponItem.spear_of_assal];
+spear_of_assalCache[? weaponStats.name] = "Spear of Assal";
+spear_of_assalCache[? weaponStats.type] = weaponClass.spear;
+spear_of_assalCache[? weaponStats.damage] = 5;
+spear_of_assalCache[? weaponStats.strMod] = 0.10;
+spear_of_assalCache[? weaponStats.dexMod] = 0.20;
+spear_of_assalCache[? weaponStats.stagger] = 1.1;
+spear_of_assalCache[? weaponStats.range] = 2;
+spear_of_assalCache[? weaponStats.specialType] = -1;
+spear_of_assalCache[? weaponStats.specialValue] = 0;
+spear_of_assalCache[? weaponStats.uniqueAttack] = 15;
+spear_of_assalCache[? weaponStats.misc] = noone;
+			#endregion
+			#region spear_of_lugh (mega cool)
+weaponCache[? weaponItem.spear_of_lugh] = ds_map_create();
+var spear_of_lughCache = weaponCache[? weaponItem.spear_of_lugh];
+spear_of_lughCache[? weaponStats.name] = "Spear of Lugh";
+spear_of_lughCache[? weaponStats.type] = weaponClass.spear;
+spear_of_lughCache[? weaponStats.damage] = 6;
+spear_of_lughCache[? weaponStats.strMod] = 0.07;
+spear_of_lughCache[? weaponStats.dexMod] = 0.20;
+spear_of_lughCache[? weaponStats.stagger] = 1.1;
+spear_of_lughCache[? weaponStats.range] = 2;
+spear_of_lughCache[? weaponStats.specialType] = -1;
+spear_of_lughCache[? weaponStats.specialValue] = 0;
+spear_of_lughCache[? weaponStats.uniqueAttack] = 15;
+spear_of_lughCache[? weaponStats.misc] = noone;
 			#endregion
 		#endregion
 	#endregion
